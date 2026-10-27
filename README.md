@@ -215,3 +215,36 @@ Open the index.html file in a web browser.
 An interactive webpage that displays student details,
 grades, and class statistics.
 
+
+# Day 11 - React Student Registration Form
+
+## Description
+A React application for student course registration.
+
+## Features
+- Enter student name and email.
+- Select a course.
+- Validate required fields.
+- Display submitted student details.
+- Use the useState Hook for state management.
+- Handle form submission with events.
+- Use conditional rendering.
+
+## Technologies Used
+- React
+- JavaScript
+- HTML
+- Vite
+
+## How to Run
+1. Install Node.js.
+2. Download or clone this repository.
+3. Open the project folder in a terminal.
+4. Run npm install.
+5. Run npm run dev.
+6. Open the local URL shown in the terminal.
+
+## Learning Outcomes
+Learned functional components, state, controlled components,
+event handling, form handling, and conditional rendering.
+
