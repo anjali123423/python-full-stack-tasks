@@ -1,0 +1,102 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.navbar {
+  background: #172554;
+  color: white;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a.active {
+  color: #fbbf24;
+  border-bottom: 2px solid #fbbf24;
+  padding-bottom: 5px;
+}
+
+.page {
+  max-width: 850px;
+  margin: 45px auto;
+  padding: 35px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px #00000012;
+}
+
+.page h1 {
+  color: #1d4ed8;
+}
+
+.page p {
+  line-height: 1.7;
+}
+
+.button {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 12px;
+}
+
+.button:hover {
+  background: #1e40af;
+}
+
+.student-list li {
+  margin: 15px 0;
+}
+
+.student-list a,
+.page > a:not(.button) {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.student-list a:hover,
+.page > a:not(.button):hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .page {
+    margin: 20px 12px;
+    padding: 22px;
+  }
+}
