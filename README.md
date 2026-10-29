@@ -248,3 +248,29 @@ A React application for student course registration.
 Learned functional components, state, controlled components,
 event handling, form handling, and conditional rendering.
 
+
+# Day 12 - React Routing
+
+## Description
+A multi-page React application using React Router.
+
+## Pages
+- Home: Welcome page.
+- About: Application information.
+- Students: Student list and dynamic student details.
+- Contact: Contact information.
+- 404: Displays when a page does not exist.
+
+## Concepts Covered
+- BrowserRouter
+- Routes and Route
+- Link and NavLink
+- Client-side navigation
+- Dynamic route parameters using useParams
+- Not-found page
+
+## How to Run
+1. Install dependencies using npm install.
+2. Start the development server using npm run dev.
+3. Open the local URL shown in the terminal.
+
