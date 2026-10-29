@@ -274,3 +274,124 @@ A multi-page React application using React Router.
 2. Start the development server using npm run dev.
 3. Open the local URL shown in the terminal.
 
+
+
+
+# Day 13 - Database Fundamentals
+
+## Project: Student Management Database
+
+### 1. Objective
+To design a relational database for managing student details, courses, and student enrollments using PostgreSQL.
+
+### 2. Introduction
+A database is an organized collection of information. A relational database stores data in tables containing rows and columns. PostgreSQL is a relational database management system used to store and manage data.
+
+### 3. Database Tables
+
+#### Students Table
+Stores personal information about students.
+
+- `student_id` - Primary key that uniquely identifies each student.
+- `first_name` - Student's first name.
+- `last_name` - Student's last name.
+- `email` - Student's unique email address.
+- `phone` - Student's contact number.
+- `date_of_birth` - Student's date of birth.
+
+#### Courses Table
+Stores information about available courses.
+
+- `course_id` - Primary key that uniquely identifies each course.
+- `course_name` - Name of the course.
+- `course_code` - Unique code assigned to each course.
+- `credits` - Number of credits for the course.
+
+#### Enrollments Table
+Connects students with their selected courses.
+
+- `enrollment_id` - Primary key that uniquely identifies each enrollment.
+- `student_id` - Foreign key referencing the Students table.
+- `course_id` - Foreign key referencing the Courses table.
+- `enrollment_date` - Date when the student enrolls.
+- `grade` - Grade received by the student.
+
+### 4. ER Diagram
+
+
+# Student Management ER Diagram
+
+```mermaid
+erDiagram
+    STUDENTS ||--o{ ENROLLMENTS : registers
+    COURSES ||--o{ ENROLLMENTS : includes
+
+    STUDENTS {
+        int student_id PK
+        string first_name
+        string last_name
+        string email
+    }
+
+    COURSES {
+        int course_id PK
+        string course_name
+        string course_code
+        int credits
+    }
+
+    ENROLLMENTS {
+        int enrollment_id PK
+        int student_id FK
+        int course_id FK
+        date enrollment_date
+        string grade
+    }
+```
+
+
+### 5. Relationships
+
+- One student can enroll in multiple courses.
+- One course can have multiple students.
+- The Enrollments table connects Students and Courses.
+- Students and Enrollments have a one-to-many relationship.
+- Courses and Enrollments have a one-to-many relationship.
+- Students and Courses have a many-to-many relationship through Enrollments.
+
+### 6. Primary Key and Foreign Key
+
+- Primary Key (PK): Uniquely identifies each record in a table.
+- Foreign Key (FK): Connects related tables and maintains referential integrity.
+
+### 7. Technologies Used
+
+- PostgreSQL
+- SQL
+- GitHub Markdown
+- Mermaid ER Diagram / PNG image
+
+### 8. Project Files
+
+- `student_management.sql` - SQL commands to create the database tables.
+- `database_design.md` - Detailed database design and field descriptions.
+- `er_diagram.md` - ER diagram source code.
+- `er_diagram.png` - ER diagram image.
+- `README.md` - Project documentation.
+
+### 9. How to Implement
+
+1. Open a PostgreSQL environment.
+2. Create a database named `student_management`.
+3. Open and execute `student_management.sql`.
+4. Verify that the Students, Courses, and Enrollments tables are created.
+5. Review the ER diagram to understand the relationships.
+
+### 10. Expected Output
+
+A Student Management database design containing three related tables, primary keys, foreign keys, and a visual ER diagram.
+
+### 11. Conclusion
+
+This project demonstrates the fundamentals of relational databases, database design, primary keys, foreign keys, table relationships, PostgreSQL, and ER diagrams.
+
