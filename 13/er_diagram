@@ -1,0 +1,43 @@
+
+# Student Management ER Diagram
+
+This diagram represents the relationship between Students,
+Courses, and Enrollments.
+
+```mermaid
+erDiagram
+    STUDENTS ||--o{ ENROLLMENTS : registers
+    COURSES ||--o{ ENROLLMENTS : includes
+
+    STUDENTS {
+        int student_id PK
+        varchar first_name
+        varchar last_name
+        varchar email
+        varchar phone
+        date date_of_birth
+    }
+
+    COURSES {
+        int course_id PK
+        varchar course_name
+        varchar course_code
+        int credits
+    }
+
+    ENROLLMENTS {
+        int enrollment_id PK
+        int student_id FK
+        int course_id FK
+        date enrollment_date
+        varchar grade
+    }
+```
+
+## Relationships
+
+- One student can enroll in multiple courses.
+- One course can have multiple students.
+- Enrollments connects Students and Courses.
+- PK means Primary Key.
+- FK means Foreign Key.
