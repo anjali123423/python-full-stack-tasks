@@ -395,3 +395,47 @@ A Student Management database design containing three related tables, primary ke
 
 This project demonstrates the fundamentals of relational databases, database design, primary keys, foreign keys, table relationships, PostgreSQL, and ER diagrams.
 
+
+# Day 14 - SQL Fundamentals
+
+## Objective
+Learn SQL commands to create tables, insert records,
+retrieve data, update information, and delete records.
+
+## Topics Covered
+- CREATE, ALTER, and DROP
+- INSERT, UPDATE, and DELETE
+- SELECT and WHERE
+- ORDER BY and LIMIT
+- Filtering records
+- Constraints
+- Primary and foreign keys
+- JOIN operations
+
+## Tasks Completed
+- Created student, course, and enrollment tables.
+- Inserted sample student and course records.
+- Retrieved and filtered records.
+- Sorted and limited query results.
+- Updated student information.
+- Deleted a selected enrollment.
+- Practiced SQL JOIN queries.
+
+## Expected Output
+- Database tables created successfully.
+- Sample records inserted successfully.
+- SQL queries practiced successfully.
+- Student and course details retrieved.
+- Update and delete operations verified.
+
+## Technology Used
+PostgreSQL and SQL
+
+## How to Run
+1. Open a PostgreSQL-compatible SQL editor.
+2. Create the tables using the SQL file.
+3. Insert the sample records.
+4. Execute the SELECT queries.
+5. Verify the UPDATE and DELETE operations.
+
+
