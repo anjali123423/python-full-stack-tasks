@@ -1,0 +1,26 @@
+
+CREATE TABLE courses (
+    course_id INT PRIMARY KEY,
+    course_name VARCHAR(100),
+    fees INT
+);
+
+CREATE TABLE students (
+    student_id INT PRIMARY KEY,
+    student_name VARCHAR(100),
+    city VARCHAR(50),
+    marks INT,
+    course_id INT REFERENCES courses(course_id)
+);
+
+INSERT INTO courses VALUES
+(101, 'Python', 5000),
+(102, 'SQL', 4000),
+(103, 'Web Development', 6000);
+
+INSERT INTO students VALUES
+(1, 'Amit', 'Pune', 85, 101),
+(2, 'Priya', 'Mumbai', 90, 102),
+(3, 'Rahul', 'Pune', 75, 101),
+(4, 'Sneha', 'Nashik', 88, 103),
+(5, 'Neha', 'Mumbai', 70, 102);
