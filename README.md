@@ -439,3 +439,34 @@ PostgreSQL and SQL
 5. Verify the UPDATE and DELETE operations.
 
 
+# Day 15 - Advanced SQL Topics
+
+## Topics Covered
+- Aggregate functions: COUNT, SUM, AVG, MIN, MAX
+- INNER JOIN and LEFT JOIN
+- GROUP BY and HAVING
+- Subqueries
+- Index basics
+- Database relationships
+- Duplicate data checking
+- Normalization fundamentals
+
+## Tasks Completed
+1. Calculated student statistics using aggregate functions.
+2. Retrieved student and course details using joins.
+3. Grouped students by course and filtered results using HAVING.
+4. Found students scoring above average using a subquery.
+5. Created an index on student names.
+6. Checked for duplicate names and unmatched courses.
+7. Reviewed primary keys and foreign key relationships.
+
+## Tools Used
+- PostgreSQL
+- SQL
+
+## How to Run
+1. Open PostgreSQL and select your database.
+2. Open the SQL editor.
+3. Run `day15_advanced_sql.sql`.
+4. Review the query results.
+
